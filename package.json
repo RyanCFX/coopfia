@@ -21,7 +21,9 @@
 		"@types/react-dom": "^18.0.6",
 		"apexcharts": "^3.35.2",
 		"appwrite": "^13.0.1",
+		"formik": "^2.4.5",
 		"framer-motion": "^4.1.17",
+		"moment": "^2.29.4",
 		"react": "^17.0.2",
 		"react-apexcharts": "^1.4.0",
 		"react-calendar": "^3.7.0",
@@ -32,10 +34,14 @@
 		"react-is": "^18.0.0",
 		"react-router-dom": "^5.3.0",
 		"react-scripts": "5.0.0",
+		"sass": "^1.69.5",
 		"stylis": "^4.1.1",
 		"stylis-plugin-rtl": "2.0.2",
+		"sweetalert2": "^11.10.1",
 		"typescript": "^4.7.4",
-		"web-vitals": "^1.1.2"
+		"uuidjs": "^5.0.1",
+		"web-vitals": "^1.1.2",
+		"yup": "^1.3.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",

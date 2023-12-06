@@ -11,9 +11,9 @@ export function SidebarLinks(props: {
 	let location = useLocation();
 	let activeColor = useColorModeValue('gray.700', 'white');
 	let inactiveColor = useColorModeValue('secondaryGray.600', 'secondaryGray.600');
-	let activeIcon = useColorModeValue('brand.500', 'white');
+	let activeIcon = useColorModeValue(' #072525', 'white');
 	let textColor = useColorModeValue('secondaryGray.500', 'white');
-	let brandColor = useColorModeValue('brand.500', 'brand.400');
+	let brandColor = useColorModeValue(' #072525', 'brand.400');
 
 	const { routes } = props;
 
@@ -31,7 +31,7 @@ export function SidebarLinks(props: {
 				route: RoutesType,
 				index: number
 			) => {
-				if (route.layout === '/admin' || route.layout === '/auth' || route.layout === '/rtl') {
+				if ((route.layout === '/admin' || route.layout === '/auth' || route.layout === '/rtl') && !route.hide) {
 					return (
 						<NavLink key={index} to={route.layout + route.path}>
 							{route.icon ? (
@@ -80,6 +80,8 @@ export function SidebarLinks(props: {
 						</NavLink>
 					);
 				}
+
+				return null;
 			}
 		);
 	};
