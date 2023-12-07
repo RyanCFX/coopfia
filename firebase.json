@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "coopfia-app",
-    "public": "public",
+    "public": "y",
     "ignore": [
       "firebase.json",
       "**/.*",
