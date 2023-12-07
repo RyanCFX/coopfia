@@ -75,6 +75,7 @@ export const format = {
 
     return formated.format(number);
   },
+  
   maritalStatus: (status: string) => {
     const statuses: any = {
       S: "Soltero",
